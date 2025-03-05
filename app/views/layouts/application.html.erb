@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title><%= content_for(:title) || t('site.name') %></title>
-
-    <meta name="description" content="<%= t('site.description') %>">
-    <meta name="author" content="Lane Zhang at blog5.com">
+    <meta charset="utf-8" />
+    <title>
+      <% title = content_for(:title) %>
+      <% if title.present? %>
+        <%= title %> -
+      <% end %>
+       <%= t(:blog_name) %>
+    </title>
+    <meta name="description" content="<%= t(:headline) %>">
+    <meta name="author" content="<%= t(:author) %>">
 
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -22,7 +28,9 @@
     <link rel="apple-touch-icon" href="/icon.png">
 
     <%# Includes all stylesheet files in app/assets/stylesheets %>
-    <%#= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag :application, "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "theme-1.css", "data-turbo-track": "reload" %>
+
     <%= javascript_importmap_tags %>
   </head>
 
@@ -30,5 +38,7 @@
     <%= yield %>
   </body>
 
-  <%= javascript_include_tag 'src/fontawesome/all.min' %>
+  <%= javascript_include_tag 'src/fontawesome/js/all.min', defer: 'defer' %>
+  <%= javascript_include_tag 'src/popper.min.js', defer: 'defer' %>
+  <%= javascript_include_tag 'src/bootstrap.min.js', defer: 'defer' %>
 </html>

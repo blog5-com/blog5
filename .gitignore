@@ -34,3 +34,17 @@
 /config/master.key
 
 /.idea/*
+_themes/DevBlog-Theme
+/app/assets/images/
+/app/assets/stylesheets/theme-1.css
+/app/assets/stylesheets/theme-2.css
+/app/assets/stylesheets/theme-3.css
+/app/assets/stylesheets/theme-4.css
+/app/assets/stylesheets/theme-5.css
+/app/assets/stylesheets/theme-6.css
+/app/assets/stylesheets/theme-7.css
+/app/assets/stylesheets/theme-8.css
+app/javascript/src/fontawesome/js
+app/stylesheets
+/app/javascript/src/bootstrap.min.js
+/app/javascript/src/popper.min.js

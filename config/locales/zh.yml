@@ -1,0 +1,60 @@
+zh:
+  blog_name: "张健的博客"
+  headline: "张健的博客 - 一个程序员的自白"
+  brief_personal_introduction: "嗨，我是张健。这里介绍下自己，说出自己能为读者带来什么独特的价值。如：我是一名全栈工程师，如果你想学 Web 开发，找我就对了！"
+  author: "张健"
+
+  find_more_about_me: "进一步了解我"
+  get_in_touch: "快联系我吧！"
+
+  subscribe: "订阅"
+  subscribe_to_receive_email: "欢迎光临我的博客。通过邮件订阅，不再错过我的最新文章！"
+
+  posted_at: "发布于"
+
+  # More information at https://github.com/svenfuchs/rails-i18n/tree/master/rails/locale
+  datetime:
+    distance_in_words:
+      about_x_hours: "%{count}小时前"
+      about_x_months: "%{count}个月前"
+      about_x_years: "%{count}年前"
+      almost_x_years: "%{count}年前"
+      half_a_minute: 半分钟前
+      less_than_x_seconds: "%{count}秒前"
+      less_than_x_minutes: "%{count}分钟前"
+      over_x_years: "%{count}年前"
+      x_seconds: "%{count}秒前"
+      x_minutes: "%{count}分钟前"
+      x_days: "%{count}天前"
+      x_months: "%{count}个月前"
+      x_years: "%{count}年前"
+
+
+# Files in the config/locales directory are used for internationalization and
+# are automatically loaded by Rails. If you want to use locales other than
+# English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t "hello"
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t("hello") %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more about the API, please read the Rails Internationalization guide
+# at https://guides.rubyonrails.org/i18n.html.
+#
+# Be aware that YAML interprets the following case-insensitive strings as
+# booleans: `true`, `false`, `on`, `off`, `yes`, `no`. Therefore, these strings
+# must be quoted to be interpreted as strings. For example:
+#
+#     en:
+#       "yes": yup
+#       enabled: "ON"
